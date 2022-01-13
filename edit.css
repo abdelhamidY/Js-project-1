@@ -1,0 +1,75 @@
+body {
+    background: #114357; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f29492,
+      #114357
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f29492,
+      #114357
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .btn-show {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 40px;
+    border: none;
+    margin: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .btn-show:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+  .close-window {
+    background: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: white;
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    /* visibility:hidden; */
+  }
+  @keyframes moveLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
